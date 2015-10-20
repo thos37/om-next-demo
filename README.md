@@ -13,7 +13,7 @@ boot dev
 ```
 Open your browser to [http://localhost:8081](http://localhost:8081)
 
-To see server reloading in action, try changing todomvc.server/index to the following and reload your browser:
+To see server reloading in action, change 'todomvc.server/index to the following and reload your browser:
 ```clojure
 (defn index [req]
       {:status 200
@@ -28,5 +28,5 @@ boot repl -c
 then
 ```clojure
 (start-repl)
-(js/console.log "Hello BREPL!"
+(js/alert "Hello BREPL!")
 ```

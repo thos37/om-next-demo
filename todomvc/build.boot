@@ -47,7 +47,7 @@
   '[adzerk.boot-reload     :refer [reload]]
   '[system.boot            :refer [system run]]
   '[reloaded.repl          :refer [go reset start stop]]
-  '[adzerk/boot-test]      :refer [test]
+  '[adzerk.boot-test       :refer [test]]
   '[todomvc.system]
   )
 
@@ -77,12 +77,12 @@
                    :hot-reload true
                    :files ["server.clj" "parser.clj" "middleware.clj"]) ; server code will be reloaded when these files change
            (speak)
+           (cljs-repl)   ;; to access browser repl, open a second terminal, "boot repl -c", then (start-repl)
            (reload)
            (cljs :source-map true :optimizations :none )
            ;; cljs compiler-options :output-to :output-dir
            ;; are set via src/cljs/public/js/app.cljs.edn
            ;; see https://github.com/adzerk-oss/boot-cljs/issues/104
-           (cljs-repl)   ;; to access browser repl, open a second terminal, "boot repl -c", then (start-repl)
            ;(repl :server true)
          ))
 

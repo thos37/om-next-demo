@@ -2,3 +2,6 @@
 todomvc/target
 todomvc/resources/public/js
 .repl*
+.nrepl*
+.lein*
+figwheel_server.log
