@@ -11,8 +11,16 @@ To run it:
 ```bash
 boot dev
 ```
-And open your browser to [http://localhost:8081](http://localhost:8081)
+Open your browser to [http://localhost:8081](http://localhost:8081)
 
+To see server reloading in action, try changing todomvc.server/index to the following and reload your browser:
+```clojure
+(defn index [req]
+      {:status 200
+       :headers {"Content-Type" "text/html"}
+       :body "Hello auto-reloading!"}
+      )
+```
 To connect to the BREPL, open a new terminal and:
 ```bash
 boot repl -c
@@ -20,4 +28,5 @@ boot repl -c
 then
 ```clojure
 (start-repl)
+(js/console.log "Hello BREPL!"
 ```
