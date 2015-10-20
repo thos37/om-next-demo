@@ -1,0 +1,2 @@
+{:require  [todomvc.core todomvc.item todomvc.parser todomvc.util]
+ :compiler-options {:asset-path "js/app.out"}}
