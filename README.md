@@ -5,7 +5,7 @@
 
 > _[Om - github.com/swannodette/om](http://github.com/swannodette/om)_
 
-This is a fork of David Nolen's om-next-demo that uses Boot to run the server, auto-reload CLJ and CLJS files, and runs a browser (B)REPL.  
+This is a fork of David Nolen's om-next-demo that uses Boot to run the server, auto-reload CLJ and CLJS files, and run a browser (B)REPL.  It uses [Danielsz/System](https://github.com/danielsz/system) to enable server-side [Component](https://github.com/stuartsierra/component) reloading and [boot-reload](https://github.com/adzerk-oss/boot-reload) for CLJS reloading.
 
 To run it:
 ```bash
